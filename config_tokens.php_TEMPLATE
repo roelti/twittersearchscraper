@@ -1,0 +1,6 @@
+<?php
+   $access_token = "ENTER_YOUR_ACCESSTOKEN_HERE";
+   $access_token_secret = "ENTER_YOUR_SECRET_ACCESS_TOKEN_HERE";
+   $consumer_key = "ENTER YOUR CONSUMER_KEY_HERE";
+   $consumer_secret = "ENTER_YOUR_CONSUMER_SECRET";
+?>

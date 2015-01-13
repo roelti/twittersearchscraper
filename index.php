@@ -18,12 +18,13 @@
   <ul class="list-group">
     <?php
       require_once('TwitterAPIExchange.php');
+      include('config_tokens.php');
 
       $settings = array(
-          'oauth_access_token' => "271834358-iSGh3lG6slDVL0kmcMOm1AZloi4l4OMLh01AxXVC",
-          'oauth_access_token_secret' => "rGPEkKlNkBnORWFjVU4he5CK7HfqFm8iC90AACASCzMVs",
-          'consumer_key' => "Yy9ZaFhL1WHBbkseSqMyOEqkC",
-          'consumer_secret' => "xCgtep2IKBYbqZcPxQdyj8jobLTd2vXJV8T07CBzsb6JHAzvpx"
+          'oauth_access_token' => $access_token,
+          'oauth_access_token_secret' => $access_token_secret,
+          'consumer_key' => $consumer_key,
+          'consumer_secret' => $consumer_secret
       );
 
       $url = 'https://api.twitter.com/1.1/search/tweets.json';
