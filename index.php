@@ -26,7 +26,7 @@
           'consumer_key' => $consumer_key,
           'consumer_secret' => $consumer_secret
       );
-
+      $hide_url = "http://refhide.com/?";
       $url = 'https://api.twitter.com/1.1/search/tweets.json';
       $requestMethod = 'GET';
       $getfield = '?f=realtime&q=decorrespondent.nl%2F&src=typd';
@@ -40,7 +40,7 @@
       foreach($response->statuses as $tweet)
       {
         echo '<li class="list-group-item">';
-        echo "<a href={$tweet->entities->urls[0]->expanded_url} target=blank>{$tweet->entities->urls[0]->expanded_url}</a>\n ";
+        echo "<a href=$hide_url{$tweet->entities->urls[0]->expanded_url} target=blank>{$tweet->entities->urls[0]->expanded_url}</a>\n ";
         echo '</li>';
       }
     ?>
